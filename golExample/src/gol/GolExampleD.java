@@ -1,9 +1,11 @@
 package gol;
+
 import java.util.Random;
 
 public class GolExampleD {
     private static int rows = 10;
     private static int cols = 20;
+
     static String createRandomGrid(int rows, int cols) {
         var random = new Random();
         StringBuilder grid = new StringBuilder(); // Using StringBuilder for efficient string concatenation

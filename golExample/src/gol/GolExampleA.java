@@ -9,15 +9,13 @@ public class GolExampleA {
                 // Just will switch
                 if (generation % 2 == 0) {
                     return "XXX\nX.X\nXXX";
-                }
-                else
-                {
+                } else {
                     return "...\n...\n...";
                 }
             }
         };
 
         // Will use a Terminal Console
-        ConsoleRenderer.render(generator, new GolSettings(3, 3,1000, 0));
+        ConsoleRenderer.render(generator, new GolSettings(3, 3, 1000, 0));
     }
 }

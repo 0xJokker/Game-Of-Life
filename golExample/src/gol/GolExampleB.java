@@ -1,4 +1,5 @@
 package gol;
+
 public class GolExampleB {
     public static void main(String[] args) throws Exception {
 
@@ -8,15 +9,13 @@ public class GolExampleB {
                 // Just will switch
                 if (generation % 2 == 0) {
                     return "XXX\nX.X\nXXX";
-                }
-                else
-                {
+                } else {
                     return "...\n...\n...";
                 }
             }
         };
 
         // Will use a SwingRenderer Console
-        SwingRenderer.render(generator, new GolSettings(3, 3,1000, 0));
+        SwingRenderer.render(generator, new GolSettings(3, 3, 1000, 0));
     }
 }
